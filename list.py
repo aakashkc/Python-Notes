@@ -2,12 +2,12 @@
 
 # print(string[0:4:2])
 
-number=[2,3,6,8,4,7,12,14,15,8,4]
+# number=[2,3,6,8,4,7,12,14,15,8,4]
 # print(number[2:6:2])
 # print(number[1:4])
 # print([number]*3)
-number.insert(2,"this is tuple")
-print(number)
+# number.insert(2,"this is tuple")
+# print(number)
 # print(number.pop())
 # # number.sort()
 # # var1=sorted(number)
@@ -27,16 +27,13 @@ print(number)
 # print(string)
 
 
-
-
 # it=iter(string)
 # print(next(it))
-# print(next(it)) 
+# print(next(it))
 # print(next(it))
 
 
-
-# if "pratik" in string: 
+# if "pratik" in string:
 #     print("he is presrent")
 # else:
 #     print("he is not present")
@@ -48,20 +45,12 @@ print(number)
 #         print(string[name])
 
 
-
-
-
-#usinf while loop:
+# usinf while loop:
 
 # c=0
 # while c<len(string):
 #     print(string[c])
 #     c=c+1
-
-
-
-
-
 
 
 # print(string)
@@ -89,27 +78,27 @@ print(number)
 # print(even_odd(lister))
 
 
-def evenodd(num):
-    even=[]
-    odd=[]
-    for i in num:
-        if i%2==0:
-            even.append(i)
-        else:
-            odd.append(i)
-    output=[even,odd]
-    return output
-numbers=[1,2,3,4,5,6,7,8,9,10]
-print(evenodd(numbers))
+# def evenodd(num):
+#     even=[]
+#     odd=[]
+#     for i in num:
+#         if i%2==0:
+#             even.append(i)
+#         else:
+#             odd.append(i)
+#     output=[even,odd]
+#     return output
+# numbers=[1,2,3,4,5,6,7,8,9,10]
+# print(evenodd(numbers))
 
 
 # task 1
-# def squre(num):  
+# def squre(num):
 #     string=[]
 #     for i in num:
 #         print(string.append(i**2))
-#     return string 
-# number=[1,2,3,4,5,6,7,8,9,10]  
+#     return string
+# number=[1,2,3,4,5,6,7,8,9,10]
 # print(squre(number))
 # task 2
 # listers=[1,2,3,4]
@@ -119,16 +108,16 @@ print(evenodd(numbers))
 #     while a<=4:
 #         take.append(listers.pop())
 #         a=a+1
-#     return(take)    
+#     return(take)
 # print(reverse())
 
 # listers=[1,2,3,4]
 # def reverse():
-#     take=[] 
+#     take=[]
 #     for i in range(len(listers)):
 #         var1=listers.pop()
-#         take.append(var1)      
-#     return(take)    
+#         take.append(var1)
+#     return(take)
 # print(reverse())
 
 
@@ -142,19 +131,19 @@ print(evenodd(numbers))
 #     return take
 # print(rev())
 
-#task4
+# task4
 
 # def common(par1,par2):
 #     newlst=[]
 #     for i in range(len(par1)):
 #         if par1[i] in par2:
-#             newlst.append(lst1[i])    
+#             newlst.append(lst1[i])
 #     return newlst
 # lst1=[1,2,3,7,9]
 # lst2=[1,12,13,7]
 # print(common(lst1,lst2))
 
-#taks5
+# taks5
 # lst1=[5,6,3,4,6,7,5]
 # def sum1(par1):
 #     sum=[]
@@ -176,43 +165,17 @@ print(evenodd(numbers))
 # print(counting(list1))
 
 
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
+flatlist = []
+# for i in matrix:
+#     flatlist.extend(i)
+# print(flatlist)
 
+# for i in matrix:
+#     for j in i:
+#         flatlist.append(j)
+# print(flatlist)
 
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-    
-
-  
-
-
-# task4
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
- 
-
+flatlist = [j for i in matrix for j in i]
+print(flatlist)
